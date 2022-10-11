@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: kabkd/example@master
+      uses: kabkd/example@main
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
