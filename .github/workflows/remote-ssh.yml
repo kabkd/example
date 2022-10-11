@@ -21,6 +21,6 @@ jobs:
         port: ${{ secrets.PORT }}
         script_stop: true
         script: |
-          ./switch_user.sh
-          pwd
-          ls
+          cd /home/mako/frappe-docker
+          docker compose stop
+          docker compose up -d
