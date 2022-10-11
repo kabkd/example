@@ -20,5 +20,6 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          whoami
-          ls -al
+          su - mako
+          cd frappe-bench
+          docker-compose restart
